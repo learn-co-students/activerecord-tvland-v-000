@@ -72,6 +72,6 @@ describe "Actor" do
     khaleesi.save
 
     khaleesi.reload
-    expect(emilia.list_roles).to eq("Khaleesi - Game of Thrones")
+    expect(emilia.list_roles).to eq(["Khaleesi - Game of Thrones"])
   end
 end
