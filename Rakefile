@@ -1,3 +1,4 @@
+
 require_relative 'config/environment.rb'
 
 namespace :db do
@@ -17,4 +18,13 @@ namespace :db do
     connection_details = YAML::load(File.open('config/database.yml'))
     File.delete(connection_details.fetch('database')) if File.exist?(connection_details.fetch('database'))
   end
+end
+
+desc 'drop into the Pry console'
+task :console => :environment do
+  Pry.start
+end
+
+task :environment do
+  require_relative './config/environment'
 end
