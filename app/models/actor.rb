@@ -7,16 +7,8 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-# binding.pry
-    roles_info = []
-    self.characters.each{|c|
-      roles_info << c.name
-      roles_info << c.show.name
-
-    }
-
-    roles_info.join(" - ")
-
-# binding.pry
+    self.characters.collect{|c|
+      "#{c.name} - #{c.show.name}"
+    }.join(" ")
   end
 end
