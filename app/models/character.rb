@@ -6,10 +6,7 @@ class Character < ActiveRecord::Base
   	%Q(#{self.name} always says: #{self.catchphrase})
   end
   
-  def build_show(show)
-  	self.show = Show.find_or_create_by(show)
-  	self.show
-  end
+
   
   	
 end

@@ -7,11 +7,9 @@ class Actor < ActiveRecord::Base
   end
   
   def list_roles
-  	roles = ""
-  	shows.each do |show|
-  		roles += %Q(#{show.characters.where("actor_id=?", self.id).first.name} - #{show.name})
-  	end
-  	roles
+  	characters.collect do |character|
+      "#{character.name} - #{character.show.name}"
+    end.join('')
   end
   
 end
