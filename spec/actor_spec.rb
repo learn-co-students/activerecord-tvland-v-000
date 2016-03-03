@@ -5,10 +5,8 @@ describe "Actor" do
   #TODO: implement the tests as described in the it blocks,
   #      and implement the class and migrations required to pass them
 
-  # HINTS: look at show_spec.rb and network_spec.rb and character_spec.rb for guidance
-
   it "has a first and last name" do
-    # TODO set up the basic data model for actor
+    
     actor = Actor.create(:first_name => "Emilia", :last_name => "Clarke")
 
     expect(actor.first_name).to eq("Emilia")
@@ -16,8 +14,7 @@ describe "Actor" do
   end
 
   it "has associated characters in an array" do
-    # Hint: think about what migration you'll need to write so that an actor can have many characters.
-    # Where will the association foreign key go?
+    
     emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
     khaleesi = Character.new(:name => "Khaleesi")
     khaleesi.actor = emilia
@@ -51,8 +48,6 @@ describe "Actor" do
   end
 
   it "can list its full name" do
-    # TODO create an instance method on actor called full_name to return first and 
-    #last name together
     emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
     emilia.save
 
@@ -61,9 +56,6 @@ describe "Actor" do
   end
 
   it "can list all of its shows and characters" do
-    # TODO create a list_roles method
-    # TODO: build a method on actor that will return a string in the form of
-    # character name - show name
     emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
     khaleesi = Character.new(:name => "Khaleesi")
     khaleesi.actor = emilia
