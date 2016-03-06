@@ -13,7 +13,7 @@ describe Character do
     niles = Character.new(:name => "Niles Crane")
     niles.show = frasier
     niles.save
-    
+
     frasier.reload
     expect(frasier.characters).to include(niles)
     expect(niles.show).to eq(frasier)
@@ -41,7 +41,7 @@ describe Character do
 
   it "can chain-build associations to which it belongs" do
     malcolm = Character.new(:name => "Malcolm Reynolds")
-    # We can use the build_xxx method all the way up a chain, 
+    # We can use the build_xxx method all the way up a chain,
     # because each one returns an instance of that type of object
     malcolm.build_show(:name => "Firefly").build_network(:call_letters => "Fox")
     show = malcolm.show
