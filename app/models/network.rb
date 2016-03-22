@@ -4,4 +4,5 @@ class Network < ActiveRecord::Base
   def sorry
     "We're sorry about passing on John Mullaney's pilot"
   end
+
 end
