@@ -4,9 +4,7 @@ class Character < ActiveRecord::Base
   belongs_to :show
 
   def say_that_thing_you_say
-    curr_character = self.name
-    curr_phrase = self.catchphrase
-    char_says = "#{curr_character} always says: #{curr_phrase}"
+    self.name + " always says: " + self.catchphrase
 
     #expect(urkel.say_that_thing_you_say).to eq("#{urkel.name}
     #always says: #{urkel.catchphrase}")
