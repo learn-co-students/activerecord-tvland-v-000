@@ -3,14 +3,15 @@ class Actor < ActiveRecord::Base
   has_many :characters
   has_many :shows, through: :characters
 
-
-  # def create
-  #   emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
-  # end 
-
   def full_name
     "#{self.first_name} #{self.last_name}"
   end 
 
+  def list_roles
+
+    self.characters.collect do |something|
+      "#{something.name} - #{something.show.name}"
+  end 
+end
   
 end

@@ -7,7 +7,7 @@ class CreateCharacters < ActiveRecord::Migration
       t.string :name
       # the above breaks down to
       # "create a column called :call_letters on table t with type string
-      t.integer :show_id
+      t.string :show_id
       t.string :actor_id
     end
   end
