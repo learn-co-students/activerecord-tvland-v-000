@@ -10,6 +10,7 @@ class CreateCharacters < ActiveRecord::Migration
       #primary key of :id is created for us!
       # defining columns is as simple as t.[datatype] :column
       t.string :name
+      t.string :show_id
     end
   end
 end
