@@ -6,7 +6,11 @@ class Actor < ActiveRecord::Base
     "#{first_name} #{last_name}"
   end
 
-  # def list_roles
-  #   binding.pry
-  # end
+  def list_roles
+    all_roles = []
+    self.characters.each do |character|
+      all_roles << "#{character.name} - #{character.show.name}"
+    end
+    all_roles
+  end
 end
