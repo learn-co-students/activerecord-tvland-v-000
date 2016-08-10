@@ -13,6 +13,7 @@ class Actor < ActiveRecord::Base
     #   all_roles << "#{character.name} - #{character.show.name}"
     # end
     # all_roles
+    
     # -----BETTER WAY FROM SOLUTION-----
     # collect returns everything that is returned inside the argument
     characters.collect do |character|
