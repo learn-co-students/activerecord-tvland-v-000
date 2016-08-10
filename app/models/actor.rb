@@ -7,10 +7,14 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    all_roles = []
-    self.characters.each do |character|
-      all_roles << "#{character.name} - #{character.show.name}"
-    end
-    all_roles
+    # -----MY WAY-----
+    # all_roles = []
+    # self.characters.each do |character|
+    #   all_roles << "#{character.name} - #{character.show.name}"
+    # end
+    # all_roles
+    # -----BETTER WAY FROM SOLUTION
+    binding.pry
+
   end
 end
