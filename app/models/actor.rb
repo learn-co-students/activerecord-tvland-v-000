@@ -1,3 +1,17 @@
 class Actor < ActiveRecord::Base
-  
+  has_many :characters
+  has_many :shows, through: :characters
+
+
+  def full_name
+    "#{self.first_name} #{self.last_name}"
+  end
+
+  def list_roles
+    "#{self.characters.map {|el| el.name }.join} - #{self.shows.map {|el| el.name }.join}"
+  end
+
+
+
+
 end
