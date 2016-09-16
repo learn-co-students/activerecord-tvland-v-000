@@ -16,3 +16,4 @@ class Actor < ActiveRecord::Base
     (character + shows).join(" - ")
   end
 end
+
