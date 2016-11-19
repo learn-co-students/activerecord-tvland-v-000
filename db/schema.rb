@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 7) do
     t.string  "genre"
     t.string  "day"
     t.string  "season"
+    t.integer "show_id"
   end
 
 end

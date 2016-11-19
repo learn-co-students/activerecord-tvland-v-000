@@ -4,6 +4,7 @@ class AlterShows < ActiveRecord::Migration
       s.string :genre
       s.string :day
       s.string :season
+      s.integer :show_id
     end
   end
 end
