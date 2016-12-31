@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161231002702) do
+=======
+ActiveRecord::Schema.define(version: 20161230154804) do
+>>>>>>> 66936e0a5ba954489e319a5218e8359bee28694e
 
   create_table "actors", force: :cascade do |t|
     t.string "first_name"
@@ -20,8 +24,11 @@ ActiveRecord::Schema.define(version: 20161231002702) do
   create_table "characters", force: :cascade do |t|
     t.string  "name"
     t.integer "show_id"
+<<<<<<< HEAD
     t.string  "catchphrase"
     t.integer "actor_id"
+=======
+>>>>>>> 66936e0a5ba954489e319a5218e8359bee28694e
   end
 
   create_table "networks", force: :cascade do |t|
@@ -32,9 +39,12 @@ ActiveRecord::Schema.define(version: 20161231002702) do
   create_table "shows", force: :cascade do |t|
     t.string  "name"
     t.integer "network_id"
+<<<<<<< HEAD
     t.string  "day"
     t.string  "season"
     t.string  "genre"
+=======
+>>>>>>> 66936e0a5ba954489e319a5218e8359bee28694e
   end
 
 end
