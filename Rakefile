@@ -19,3 +19,13 @@ namespace :db do
     File.delete(connection_details.fetch('database')) if File.exist?(connection_details.fetch('database'))
   end
 end
+
+desc "connects to environment"
+task :environment do
+  require_relative 'config/environment.rb'
+end
+
+desc "drops into Pry"
+task :console do
+  Pry.start
+end
