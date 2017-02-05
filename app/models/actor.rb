@@ -6,15 +6,11 @@ class Actor < ActiveRecord::Base
     def full_name
       [self.first_name, self.last_name].join(" ")
     end
-    
+
 
     def list_roles
-      name = self.characters.map do |each|
-        each.name
+      characters.map do |character|
+        "#{character.name} - #{character.show.name}"
       end
-      show = self.shows.map do |each|
-        each.name
-      end
-         (name + show).join(" - ")
     end
 end
