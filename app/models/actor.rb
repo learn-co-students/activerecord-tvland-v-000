@@ -9,6 +9,11 @@ def full_name
 end
 
 def list_roles
-  self.characters.map{|c| c.name}
+
+  self.characters.collect do |c|
+         "#{c.name} - #{c.show.name}" # we are calling show name throught characters
+       end
+
 end
 end
+#self.shows.where(self.shows.id = self.characters.show_id)
