@@ -4,7 +4,7 @@ describe Show do
   let(:show) {Show.new}
 
   it "has data attributes" do
-    #TODO: You'll need to create a new migration to add
+    # You'll need to create a new migration to add
     #the necessary columns to the shows table
     community = Show.create(:name => "Community", :day => "Thursday", :season => "Winter")
     expect(community.day).to eq("Thursday")
@@ -12,7 +12,7 @@ describe Show do
   end
 
   it "has many characters in an array" do
-    #TODO: we need to associate characters to shows. for reference
+    #we need to associate characters to shows. for reference
     #look how shows are associated with networks
     #pay attention to both the model and the migrations
     show.name = "The Simpsons"
@@ -37,7 +37,7 @@ describe Show do
   end
 
   it "should have a genre" do
-    #TODO: you'll need to add yet another new field to shows here
+    #: you'll need to add yet another new field to shows here
     show.name = "Gilmore Girls"
     show.genre = "Dramedy"
     show.save
