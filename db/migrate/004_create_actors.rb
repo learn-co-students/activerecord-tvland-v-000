@@ -1,4 +1,4 @@
-class CreateActors < ActiveRecord::Migration
+class CreateActors < ActiveRecord::Migration[5.0]
     def up
     end
 

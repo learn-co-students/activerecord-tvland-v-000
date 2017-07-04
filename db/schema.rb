@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 5) do
   create_table "characters", force: :cascade do |t|
     t.string  "name"
     t.integer "show_id"
+    t.integer "actor_id"
+    t.index ["actor_id"], name: "index_characters_on_actor_id"
+    t.index ["show_id"], name: "index_characters_on_show_id"
   end
 
   create_table "networks", force: :cascade do |t|

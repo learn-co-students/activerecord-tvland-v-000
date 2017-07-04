@@ -1,4 +1,4 @@
-class CreateCharacters < ActiveRecord::Migration
+class CreateCharacters < ActiveRecord::Migration[5.0]
   def up
   end
 
