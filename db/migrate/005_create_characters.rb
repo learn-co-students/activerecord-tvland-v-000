@@ -9,6 +9,8 @@ class CreateCharacters < ActiveRecord::Migration
     create_table :characters do |t|
       t.string :name
       t.integer :show_id
+      t.belongs_to :actors, index: true
+      t.belongs_to :shows, index: true
     end
   end
 end
