@@ -20,6 +20,7 @@ describe "Actor" do
     # Where will the association foreign key go?
     emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
     khaleesi = Character.new(:name => "Khaleesi")
+    #binding.pry
     khaleesi.actor = emilia
     khaleesi.save
 
