@@ -1,5 +1,5 @@
 require_relative 'spec_helper'
-require 'pry'
+
 describe Character do
 
   it "belongs to an actor" do
