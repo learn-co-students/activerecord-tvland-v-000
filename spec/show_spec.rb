@@ -39,6 +39,7 @@ describe Show do
   it "should have a genre" do
     #TODO: you'll need to add yet another new field to shows here
     show.name = "Gilmore Girls"
+    binding.pry
     show.genre = "Dramedy"
     show.save
     dramedy = Show.find_by(:genre => "Dramedy")
