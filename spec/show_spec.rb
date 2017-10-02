@@ -3,13 +3,6 @@ require_relative 'spec_helper'
 describe Show do
   let(:show) {Show.new}
 
-  it "has data attributes" do
-    #TODO: You'll need to create a new migration to add
-    #the necessary columns to the shows table
-    community = Show.create(:name => "Community", :day => "Thursday", :season => "Winter")
-    expect(community.day).to eq("Thursday")
-    expect(community.season).to eq("Winter")
-  end
 
   it "has many characters in an array" do
     #TODO: we need to associate characters to shows. for reference
