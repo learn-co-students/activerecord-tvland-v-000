@@ -1,3 +1,5 @@
 class Show < ActiveRecord::Base
-  
-end
+  has_many :characters
+
+
+end  #  End of Class

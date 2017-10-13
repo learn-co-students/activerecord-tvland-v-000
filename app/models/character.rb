@@ -1,3 +1,4 @@
 class Character < ActiveRecord::Base
-  
-end
+  belongs_to :shows
+
+end  #  End of Class
