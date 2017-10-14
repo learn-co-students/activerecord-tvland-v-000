@@ -4,5 +4,10 @@ class AddShowsToNetwork < ActiveRecord::Migration
   #we make the change.
   def change
     add_column :shows, :network_id, :integer
+    create_table :actors do |t|
+      t.string :first_name
+      t.string :last_name
+    end
   end
+
 end
