@@ -9,7 +9,7 @@
 
 In this lab, we'll be working with a TV show domain model. We will have a show, network and character model. They will be associated in the following way:
 
-* An actor has many characters and has many shows through characters. 
+* An actor has many characters and has many shows through characters.
 * A character belongs to an actor and belongs to a show.
 * A show has many characters and has many actors through characters.
 
@@ -32,7 +32,7 @@ We've given you a few migrations in the `db/migrate` directory to create the net
 ### `spec/show_spec.rb`
 
 * Write a migration for the shows table. A show should have a name and a genre.
-* Create the neccesary associations between shows, networks, and characters.
+* Create the necessary associations between shows, networks, and characters.
 
 
 ## Resources

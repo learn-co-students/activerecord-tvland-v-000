@@ -8,8 +8,8 @@ has_many :shows, through: :characters
   end
 
   def list_roles
-    self.characters.each do |character|
-    "#{character.name} - #{character.show}"
+    self.characters.collect do |character|
+    "#{character.name} - #{character.show.name}"
     end
   end
 end
