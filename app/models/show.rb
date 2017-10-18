@@ -8,8 +8,7 @@ class Show < ActiveRecord::Base
 
   end
 
-  def build_network(call_letters)
-    binding.pry
-    self.network.call_letters = call_letters
+  def build_network(call_letters)    
+    self.network = Network.create(call_letters)
   end
 end
