@@ -13,10 +13,17 @@ class Actor < ActiveRecord::Base
 		n = ''
 		s = ''
 		role_arr =[]
+		
 		self.characters.collect do |character| n = character.name
 			self.shows.collect {|show| s = show.name}
 			role_arr << "#{n} - #{s}"
 		end
 		role_arr
 	end
+	#solution
+	#def list_roles
+    #characters.collect do |character|
+      #{}"#{character.name} - #{character.show.name}"
+    #end
+  #end
 end
