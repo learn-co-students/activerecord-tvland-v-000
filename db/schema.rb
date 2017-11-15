@@ -30,9 +30,10 @@ ActiveRecord::Schema.define(version: 7) do
   end
 
   create_table "shows", force: :cascade do |t|
-    t.string  "name"
-    t.integer "network_id"
-    t.string  "genre"
+    t.string   "name"
+    t.integer  "network_id"
+    t.string   "genre"
+    t.datetime "day"
   end
 
 end
