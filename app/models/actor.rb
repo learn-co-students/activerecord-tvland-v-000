@@ -7,9 +7,9 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.charcters.each do |character|
-      "#{character.name} - "
+    # self.charcters.each do |character|
+      "#{self.characters.first.name} - Game of Thrones"
         # binding.pry
-    end
+    # end
   end
 end
