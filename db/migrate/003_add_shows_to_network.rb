@@ -6,3 +6,4 @@ class AddShowsToNetwork < ActiveRecord::Migration
     add_column :shows, :network_id, :integer
   end
 end
+ 
