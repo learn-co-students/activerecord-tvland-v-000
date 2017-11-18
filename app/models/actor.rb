@@ -7,7 +7,12 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.characters
+    self.characters.map{|c|
+      c.name + " - " + c.show.name
+    }
   end
 
+  def shows
+    self.chracters.map{|c| c.show}.uniq
+  end
 end
