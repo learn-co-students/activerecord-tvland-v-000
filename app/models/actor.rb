@@ -8,10 +8,9 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    roles = []
-    self.characters.each_with_index {|s, i| roles[i] = s.name}
-    self.shows.each_with_index {|s,i| roles[i] += " - #{s.name}"}
-    roles
-  end
+    self.characters.collect do |character|
+     "#{character.name} - #{character.show.name}"
+   end
+ end
 
 end
