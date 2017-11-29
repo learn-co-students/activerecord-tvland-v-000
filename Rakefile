@@ -13,6 +13,13 @@ namespace :db do
   desc "drop and recreate the db"
   task :reset => [:drop, :migrate]
 
+  desc "open Pry"
+  task :console do
+    connection_details = YAML::load(File.open('config/database.yml'))
+    ActiveRecord::Base.establish_connection(connection_details)
+    Pry.start
+  end
+
   desc "drop the db"
   task :drop do
     connection_details = YAML::load(File.open('config/database.yml'))
