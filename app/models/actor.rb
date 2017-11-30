@@ -7,7 +7,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-
     self.characters.collect.with_index do |char, i|
       "#{char.name} - #{self.shows[i].name}"
     end.join(" ")
