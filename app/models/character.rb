@@ -1,12 +1,10 @@
 class Character < ActiveRecord::Base
-  belongs_to :actors
-  belongs_to :shows
+  belongs_to :actor
+  belongs_to :show
 
-  def change
-    create_table :characters do |t|
-      t.string :name
-      t.integer :show_id
-    end
+  def say_that_thing_you_say
+    "#{self.name} always says: #{self.catchphrase}"
   end
+
 
 end
