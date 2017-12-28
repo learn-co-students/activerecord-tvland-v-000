@@ -1,5 +1,8 @@
 class Actor < ActiveRecord::Base
   has_many :characters
-  belongs_to :show
+  has_many :shows, through: :characters
 
+  def list_roles
+
+  end
 end
