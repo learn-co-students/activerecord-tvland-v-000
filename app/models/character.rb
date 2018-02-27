@@ -2,7 +2,15 @@ class Character < ActiveRecord::Base
   belongs_to :actor
   belongs_to :show
 
-  def build_show(name)
+  def say_that_thing_you_say
+    "#{self.name} always says: #{self.catchphrase}"
+  end
 
+  def build_show(name)
+    self.show.name = name
+  end
+
+  def build_network(network)
+    self.show.network.call_letters = network
   end
 end
