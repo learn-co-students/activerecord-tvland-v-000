@@ -19,10 +19,9 @@ ActiveRecord::Schema.define(version: 10) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
-    t.integer "show_id"
     t.string "catchphrase"
-    t.string "actor"
-    t.string "show"
+    t.integer "actor_id"
+    t.integer "show_id"
   end
 
   create_table "networks", force: :cascade do |t|
