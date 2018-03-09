@@ -26,6 +26,7 @@ describe "Actor" do
     khaleesi.reload
     expect(emilia.characters).to include(khaleesi)
     expect(khaleesi.actor).to eq(emilia)
+    #we need the character table to include an actor column
   end
 
   it "can build its associated characters" do
