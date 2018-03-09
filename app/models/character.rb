@@ -10,4 +10,5 @@ class Character < ActiveRecord::Base
     self.actor_id.name
   end
 
+
 end
