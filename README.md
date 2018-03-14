@@ -32,7 +32,7 @@ We've given you a few migrations in the `db/migrate` directory to create the net
 ### `spec/show_spec.rb`
  
 * Write a migration for the shows table. A show should have a name and a genre. 
-* Create the neccesary associations between shows, networks, and characters. 
+* Create the necessary associations between shows, networks, and characters. 
 
 ### Active Record 5.x Migrations Versioning
 
