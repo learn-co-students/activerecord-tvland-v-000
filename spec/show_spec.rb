@@ -6,6 +6,7 @@ describe Show do
   it "has data attributes" do
     #TODO: You'll need to create a new migration to add
     #the necessary columns to the shows table
+    #binding.pry
     community = Show.create(:name => "Community", :day => "Thursday", :season => "Winter")
     expect(community.day).to eq("Thursday")
     expect(community.season).to eq("Winter")
@@ -47,6 +48,7 @@ describe Show do
 
    it "can build an associated network" do
     # to do this, the show model has to define its relationship with network
+    
     show.build_network(:call_letters => "NBC")
     expect(show.network.call_letters).to eq("NBC")
   end
