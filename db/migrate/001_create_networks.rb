@@ -11,7 +11,7 @@ class CreateNetworks < ActiveRecord::Migration
       # defining columns is as simple as t.[datatype] :column
       t.string :call_letters
       # the above breaks down to
-      # "create a column called :call_letters on table t with type string
+      # "create a column callddddded :call_letters on table t with type string
       t.integer :channel
     end
   end
