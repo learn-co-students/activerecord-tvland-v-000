@@ -1,4 +1,5 @@
 require_relative 'spec_helper'
+require 'pry'
 
 describe "Actor" do
   let(:actor) {Actor.new}
@@ -18,10 +19,12 @@ describe "Actor" do
   it "has associated characters in an array" do
     # Hint: think about what migration you'll need to write so that an actor can have many characters.
     # Where will the association foreign key go?
+
     emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
     khaleesi = Character.new(:name => "Khaleesi")
     khaleesi.actor = emilia
     khaleesi.save
+
 
     khaleesi.reload
     expect(emilia.characters).to include(khaleesi)
