@@ -8,7 +8,7 @@ describe Network do
     expect(nbc.channel).to eq(4)
     expect(nbc.call_letters).to eq("NBC")
   end
-
+ 
   it "has many shows" do
     network.call_letters = "NBC"
     network.shows << Show.new(:name => "Community")
