@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 
-describe Character do
+puts describe Character do
 
   it "belongs to an actor" do
     danny_pudi = Actor.create(first_name: "Danny", last_name: "Pudi")
@@ -8,20 +8,20 @@ describe Character do
     expect(Character.find_by(:name => "Abed").actor).to eq(danny_pudi)
   end
 
-  it "belongs to a show" do
+  puts it "belongs to a show" do
     frasier = Show.new(:name => "Frasier")
     niles = Character.new(:name => "Niles Crane")
     niles.show = frasier
     niles.save
-    
+
     frasier.reload
     expect(frasier.characters).to include(niles)
     expect(niles.show).to eq(frasier)
   end
 
-  it "has a catchphrase" do
+puts  it "has a catchphrase" do
     #TODO: make a method in the model to say his name and catchphrase
-    #remember the model is yours do with as you please, you 
+    #remember the model is yours do with as you please, you
     #are free to add methods that perform actions on the model's data
 
     urkel = Character.new(:name => "Steve Urkel")
@@ -33,15 +33,15 @@ describe Character do
 
   end
 
-  it "can build its associated show" do
+  puts it "can build its associated show" do
     jules_cobb = Character.new(:name => "Jules Cobb")
     jules_cobb.build_show(:name => "Cougar Town")
     expect(jules_cobb.show.name).to eq("Cougar Town")
   end
 
-  it "can chain-build associations to which it belongs" do
+  puts it "can chain-build associations to which it belongs" do
     malcolm = Character.new(:name => "Malcolm Reynolds")
-    # We can use the build_xxx method all the way up a chain, 
+    # We can use the build_xxx method all the way up a chain,
     # because each one returns an instance of that type of object
     malcolm.build_show(:name => "Firefly").build_network(:call_letters => "Fox")
     show = malcolm.show
