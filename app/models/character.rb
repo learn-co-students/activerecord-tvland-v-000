@@ -4,6 +4,6 @@ class Character < ActiveRecord::Base
 
   #Define a method in the Character class using a given character's catchphrase.
   def say_that_thing_you_say
-    self.catchphrase
+    "#{self.name} always says: #{self.catchphrase}"
   end
 end
