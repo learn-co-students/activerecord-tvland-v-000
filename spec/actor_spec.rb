@@ -25,6 +25,7 @@ describe "Actor" do
 
     khaleesi.reload
     expect(emilia.characters).to include(khaleesi)
+
     expect(khaleesi.actor).to eq(emilia)
   end
 
