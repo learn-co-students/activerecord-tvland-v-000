@@ -28,7 +28,7 @@ GEM
     rack (2.0.4)
     rack-protection (2.0.1)
       rack
-    rake (12.3.0)
+    rake (12.3.1)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -62,7 +62,7 @@ PLATFORMS
 DEPENDENCIES
   database_cleaner
   pry
-  rake
+  rake (= 12.3.1)
   rspec
   sinatra-activerecord
   sqlite3
