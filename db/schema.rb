@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 5) do
     t.string "last_name"
   end
 
-  create_table "character", force: :cascade do |t|
+  create_table "characters", force: :cascade do |t|
     t.string "name"
-    t.string "say_that_thing_you_say"
+    t.string "show_id"
   end
 
   create_table "networks", force: :cascade do |t|
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 5) do
 
   create_table "shows", force: :cascade do |t|
     t.string "name"
+    t.string "genre"
     t.integer "network_id"
   end
 
