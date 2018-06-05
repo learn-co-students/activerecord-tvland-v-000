@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 10) do
     t.string "name"
     t.integer "show_id"
     t.integer "actor_id"
-    t.string "acatchphrase"
     t.string "catchphrase"
   end
 
