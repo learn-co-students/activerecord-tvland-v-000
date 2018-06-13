@@ -1,0 +1,56 @@
+[33me2f1984[m Add notice about AR 5.x migrations versioning [31m(curiositypaths, 4 months ago)[m
+[33me961b97[m Add console rake task [31m(curiositypaths, 4 months ago)[m
+[33maa89703[m Update dependencies [31m(curiositypaths, 4 months ago)[m
+[33m181a28c[m Merge pull request #12 from gj/patch-1 [31m(Gabe Jackson, 11 months ago)[m
+[33m2e04991[m Mullaney --> Mulaney [31m(gabe, 1 year, 11 months ago)[m
+[33m4ea7623[m Mullaney --> Mulaney [31m(gabe, 1 year, 11 months ago)[m
+[33m7861748[m Merge pull request #11 from learn-co-curriculum/sinatra-ar [31m(Charles Pletcher, 1 year, 11 months ago)[m
+[33mbd5bdca[m added sinatra-activerecord gem [31m(JJ Seymour, 1 year, 11 months ago)[m
+[33m4fda5f6[m Update Gemfile.lock [31m(Charles Pletcher, 2 years, 1 month ago)[m
+[33ma8449e7[m Actor#list_roles should test for an array of strings [31m(Charles Pletcher, 2 years, 1 month ago)[m
+[33m683e0d5[m optimize learn link [processing skip] [31m(Adam Jonas, 2 years, 4 months ago)[m
+[33m819e58e[m Merge pull request #7 from febbraiod/febbraiod-1453662823 [31m(AnnJohn, 2 years, 5 months ago)[m
+[33m74fc138[m fix typo [31m(Don, 2 years, 5 months ago)[m
+[33m660d0e0[m Merge pull request #6 from kaylee42/kaylee42-1450815798 [31m(AnnJohn, 2 years, 5 months ago)[m
+[33m931d403[m typo [31m(Kaylee Knowles, 2 years, 6 months ago)[m
+[33m702e916[m add learn link [processing skip] [31m(Adam Jonas, 2 years, 6 months ago)[m
+[33mb7518f3[m Merge pull request #5 from learn-co-curriculum/wip-improvements [31m(Joe Burgess, 2 years, 7 months ago)[m
+[33mab4c0b5[m added instructions to readme [31m(SOPHIE DEBENEDETTO, 2 years, 7 months ago)[m
+[33m73a9820[m Add contributing instructions [31m(Spencer Rogers, 2 years, 9 months ago)[m
+[33m9ce0e82[m Merge pull request #2 from learn-co-curriculum/improvement [31m(Benjamin Gross, 3 years ago)[m
+[33ma125a2d[m Add content license [31m(The Learn Team, 3 years ago)[m
+[33mec9bca4[m final readme [31m(deniznida, 3 years ago)[m
+[33m24a9086[m update README [31m(deniznida, 3 years ago)[m
+[33m37473f5[m update Readme [31m(deniznida, 3 years ago)[m
+[33mbdd1459[m update readme [31m(deniznida, 3 years ago)[m
+[33m4d8827f[m update readme [31m(deniznida, 3 years ago)[m
+[33m791b319[m format show spec [31m(deniznida, 3 years ago)[m
+[33md639843[m format network spec [31m(deniznida, 3 years ago)[m
+[33meb25778[m format character spec [31m(deniznida, 3 years ago)[m
+[33ma8f3592[m minor changes in the models [31m(deniznida, 3 years ago)[m
+[33m75e3514[m model character to inherit from ActiveRecord Base [31m(deniznida, 3 years ago)[m
+[33m74d2a66[m add actor model and write spec for actor [31m(deniznida, 3 years ago)[m
+[33m718fd88[m change config order to default [31m(deniznida, 3 years ago)[m
+[33m6f31717[m dot learn added by fs-lms-bot [31m(Beyonce Jabroni, 3 years, 3 months ago)[m
+[33m5ac639e[m Add Database Cleaner to spec [31m(changamanda, 3 years, 4 months ago)[m
+[33mcbf5f46[m spec/character_spec.rb [31m(ahimmelstoss, 3 years, 8 months ago)[m
+[33md3c110a[m removed played by; character spec associated character with actor, as per domain design [31m(ahimmelstoss, 3 years, 8 months ago)[m
+[33m8e586b9[m fix spec [31m(ahimmelstoss, 3 years, 8 months ago)[m
+[33m6af829a[m Update README.md [31m(Amanda Himmelstoss, 3 years, 9 months ago)[m
+[33m0ae61c6[m rspec 3 syntax for specs already written [31m(ahimmelstoss, 4 years ago)[m
+[33m39c0db0[m rspec 3 syntax and pending test syntax [31m(ahimmelstoss, 4 years ago)[m
+[33ma7a1338[m Update README.md [31m(Amanda Himmelstoss, 4 years ago)[m
+[33m046c79e[m adding more instruction to pending test [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33mab966e7[m changing the character model to have a played_by [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33mfea8cea[m added more instruction [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m8359d04[m adding a full name spec [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m68f63cd[m fixing load paths [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m6f95bf7[m update readme [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m286c2f9[m adding instructions and an actor spec to fully implement [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m572037b[m add more instructions to migrations [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m8bbdcf3[m fix broken show finder spec [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m498ebd4[m fix broken show_spec [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33ma14e289[m fix broken show_spec [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m5ced7e7[m update network_spec [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33m170e4ca[m update readme [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
+[33mc4a3aba[m initial commit [31m(Scott C. Reynolds, 4 years, 7 months ago)[m
