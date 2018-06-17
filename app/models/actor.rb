@@ -16,7 +16,6 @@ class Actor < ActiveRecord::Base
       s_id = c.show_id
       show_name = Show.find(s_id).name
       c_s << "#{character_name} - #{show_name}"
-      # binding.pry
     end
     c_s
   end
