@@ -46,6 +46,7 @@ describe Show do
   end
 
    it "can build an associated network" do
+
     # to do this, the show model has to define its relationship with network
     show.build_network(:call_letters => "NBC")
     expect(show.network.call_letters).to eq("NBC")
