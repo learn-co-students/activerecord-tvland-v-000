@@ -8,8 +8,6 @@ class Character < ActiveRecord::Base
 
   def build_show(hash)
     #binding.pry
-    new_show = Show.create(name: hash[:name])
-    self.show_id = new_show.id
-    new_show
+    self.show = Show.create(name: hash[:name])
   end
 end

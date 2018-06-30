@@ -4,8 +4,6 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(hash)
-    new_network = Network.create(call_letters: hash[:call_letters])
-    self.network_id = new_network.id
-    new_network
+    self.network = Network.create(call_letters: hash[:call_letters])
   end
 end
