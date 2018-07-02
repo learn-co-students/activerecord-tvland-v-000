@@ -8,11 +8,10 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.characters
+    self.characters.map do |x|
+    "#{x.name} - #{shows[0].name}"
+  end
   end
 
 
 end
-
-expected <ActiveRecord::Associations::CollectionProxy [<Character id: 1, name: "Khaleesi", show_id: 1, catchphrases: nil, actor_id: 1>]> to i
-nclude "Khaleesi - Game of Thrones"
