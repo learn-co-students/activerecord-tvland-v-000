@@ -1,6 +1,8 @@
 require_relative 'config/environment.rb'
 require "sinatra/activerecord/rake"
 
+# Type `rake -T` on your command line to see the available rake tasks.
+
 namespace :db do
 
   desc "Migrate the db"
