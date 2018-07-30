@@ -1,6 +1,11 @@
 require "bundler/setup"
 
 require "sinatra/activerecord"
+# require_relative '../app/models/actor.rb'
+# require_relative '../app/models/character.rb'
+# require_relative '../app/models/network.rb'
+# require_relative '../app/models/show.rb'
+
 
 Bundler.require
 
