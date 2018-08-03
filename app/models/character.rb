@@ -6,8 +6,4 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{self.catchphrase}"
   end
 
-  def build_network(attributes)
-    attributes.each {|key, value| self.send(("#{key}="), value)}
-  end
-
 end
