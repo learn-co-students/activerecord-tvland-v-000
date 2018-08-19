@@ -4,7 +4,7 @@ class Actor < ActiveRecord::Base
   
   
   def full_name 
-    "#{first_name} #{last_name}"
+   "#{first_name} #{last_name}"
   end
   
   def list_roles
@@ -12,5 +12,4 @@ class Actor < ActiveRecord::Base
       "#{character.name} - #{character.show.name}"
     end
   end 
-  
 end
