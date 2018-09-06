@@ -2,13 +2,8 @@ require_relative 'spec_helper'
 
 describe "Actor" do
   let(:actor) {Actor.new}
-  #TODO: implement the tests as described in the it blocks,
-  #      and implement the class and migrations required to pass them
-
-  # HINTS: look at show_spec.rb and network_spec.rb and character_spec.rb for guidance
 
   it "has a first and last name" do
-    # TODO set up the basic data model for actor
     actor = Actor.create(:first_name => "Emilia", :last_name => "Clarke")
 
     expect(actor.first_name).to eq("Emilia")
