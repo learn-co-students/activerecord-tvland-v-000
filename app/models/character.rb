@@ -9,5 +9,5 @@ end
 
 
 def say_that_thing_you_say
-  return Character.find_by_sql(SELECT characters.catchphrase)
+  return Character.find_by_sql("SELECT characters.catchphrase")
 end
