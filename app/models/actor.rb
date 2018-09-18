@@ -1,3 +1,8 @@
 class Actor < ActiveRecord::Base
+
+  characters = []
   
-end
+  def name
+    first_name = @first_name
+    last_name = @last_name
+  end
