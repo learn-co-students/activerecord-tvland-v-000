@@ -3,6 +3,12 @@ class Character < ActiveRecord::Base
   belongs_to :actor
 
   def say_that_thing_you_say
-    self.catchphrase
+    "#{self.name} always says: #{self.catchphrase}"
   end
+
+  def build_show(name)
+    self.show  = Show.create(name)
+  end
+
+
 end
