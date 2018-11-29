@@ -7,8 +7,8 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-     "#{self.characters.name} - #{self.shows.name}"
-    # build a method on actor that will return an array of
-    # strings in the form "#{character_name} - #{show_name}"
+    characters.map { |character| "#{character.name} - #{character.show.name}" }
   end
+
+
 end

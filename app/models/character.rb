@@ -2,4 +2,15 @@ class Character < ActiveRecord::Base
   belongs_to :show
   belongs_to :actor
 
+  def say_that_thing_you_say
+    "#{self.name} always says: #{self.catchphrase}"
+  end
+
+  def build_network
+
+  end
+
 end
+
+# ("#{urkel.name} always says: #{urkel.catchphrase}")
+#        expected: "Steve Urkel always says: Did I do that?"
