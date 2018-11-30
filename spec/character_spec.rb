@@ -48,5 +48,4 @@ describe Character do
     expect(show.name).to eq("Firefly")
     expect(show.network.call_letters).to eq("Fox")
   end
-
 end
