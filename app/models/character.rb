@@ -6,12 +6,4 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{self.catchphrase}"
   end
   
-  def build_show(options = {})
-    new_show = Show.create(name: options[name])
-    self.show = new_show
-  end
-  
-  def build_network(options = {})
-    self.network = Network.create(call_letters: options[call_letters])
-  end
 end
