@@ -6,11 +6,9 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{self.catchphrase}"
   end
 
-  def build_network
+  # def build_network
+  #
+  # end
 
-  end
 
 end
-
-# ("#{urkel.name} always says: #{urkel.catchphrase}")
-#        expected: "Steve Urkel always says: Did I do that?"
