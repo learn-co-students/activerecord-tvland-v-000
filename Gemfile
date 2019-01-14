@@ -5,3 +5,6 @@ gem "sinatra-activerecord"
 gem "sqlite3"
 gem "rake"
 gem "database_cleaner"
+group :development, :test do
+  gem 'sinatra-activerecord'
+end
