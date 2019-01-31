@@ -1,4 +1,4 @@
-# TV Land ActiveRecord Associations Lab
+yytytuuuh# TV Land ActiveRecord Associations Lab
 
 ## Objectives
 
