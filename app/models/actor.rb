@@ -3,6 +3,7 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters
   
   def full_name
+    self.select(first_name, last_name)
   end
   
   def list_roles
