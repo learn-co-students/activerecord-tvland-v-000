@@ -17,7 +17,17 @@ as Song.create is to create_association
 #both above are equivalent
 
 # HAS MANY
-  # replace "collection" with 
+  # replace "collection" with the name of the association
   
 
 #parent is always on the far left
+# Why is "pushing" closer to creating than building?
+  # When you push a song onto an object, you're saving
+
+# What is the difference between "pushing" a song onto a collection of songs and "creating" a song?
+  # push => return value is the entire collection
+  # create => return value is just the song that was created
+  
+  
+# VALIDATIONS
+  # validations are only run if you are trying to persist it

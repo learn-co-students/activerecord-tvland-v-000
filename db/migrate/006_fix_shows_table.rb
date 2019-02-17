@@ -1,5 +1,5 @@
 class FixShowsTable < ActiveRecord::Migration[4.2]
-  # def change
-    
-  # end  
+  def change
+    add_column :shows, :genre, :string
+  end  
 end
