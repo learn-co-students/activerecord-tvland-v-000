@@ -1,5 +1,5 @@
 class FixShowsTable < ActiveRecord::Migration[4.2]
-  def change
+  # def change
     
-  end  
+  # end  
 end
