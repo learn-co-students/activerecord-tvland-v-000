@@ -12,9 +12,6 @@ describe Show do
   end
 
   it "has many characters in an array" do
-    #TODO: we need to associate characters to shows. for reference
-    #look how shows are associated with networks
-    #pay attention to both the model and the migrations
     show.name = "The Simpsons"
     characters = [
       Character.new(:name => "Ralph Wiggum"),
