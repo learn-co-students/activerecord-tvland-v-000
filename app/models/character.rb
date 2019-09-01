@@ -1,8 +1,8 @@
 class Character < ActiveRecord::Base
-  belongs_to :actor
   belongs_to :show
-  belongs_to :network
-end
+  belongs_to :actor
 
-def say_that_thing_you_say
-  return "#{self.name} always says: #{self.catchphrase}"
+  def say_that_thing_you_say
+    "#{self.name} always says: #{self.catchphrase}"
+  end
+end
