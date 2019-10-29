@@ -1,9 +1,9 @@
 require_relative 'spec_helper'
 
-puts describe Show do
+describe Show do
   let(:show) {Show.new}
 
-  puts it "has data attributes" do
+ it "has data attributes" do
     #TODO: You'll need to create a new migration to add
     #the necessary columns to the shows table
     community = Show.create(:name => "Community", :day => "Thursday", :season => "Winter")
@@ -11,7 +11,7 @@ puts describe Show do
     expect(community.season).to eq("Winter")
   end
 
-  puts it "has many characters in an array" do
+it "has many characters in an array" do
     #TODO: we need to associate characters to shows. for reference
     #look how shows are associated with networks
     #pay attention to both the model and the migrations
@@ -28,7 +28,7 @@ puts describe Show do
     expect(show.characters.collect { |s| s.name }).to include("Homer Simpson")
   end
 
-  puts it "can build its characters through a method" do
+   it "can build its characters through a method" do
     show.name = "Happy Endings"
     # we can access the characters collection and call build there to build one
     show.characters.build(:name => "Penny")
