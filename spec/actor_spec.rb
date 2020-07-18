@@ -1,5 +1,5 @@
 require_relative 'spec_helper'
-
+require 'pry'
 describe "Actor" do
   let(:actor) {Actor.new}
 

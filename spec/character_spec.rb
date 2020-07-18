@@ -1,5 +1,5 @@
 require_relative 'spec_helper'
-
+require 'pry'
 describe Character do
 
   it "has a first and last name" do
@@ -19,7 +19,6 @@ describe Character do
     niles = Character.new(name: "Niles Crane")
     niles.show = frasier
     niles.save
-    
     frasier.reload
     expect(frasier.characters).to include(niles)
     expect(niles.show).to eq(frasier)
