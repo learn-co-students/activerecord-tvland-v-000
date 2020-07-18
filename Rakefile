@@ -1,5 +1,6 @@
 require_relative 'config/environment.rb'
 require "sinatra/activerecord/rake"
+require 'pry'
 
 namespace :db do
 
@@ -23,4 +24,8 @@ namespace :db do
   task :console do
     Pry.start
   end
+end
+
+task :console do
+  Pry.start
 end
