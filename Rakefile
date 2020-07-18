@@ -24,3 +24,11 @@ namespace :db do
     Pry.start
   end
 end
+
+desc "Open IRB console"
+task :console do
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
+  require 'irb'
+  ARGV.clear
+  IRB.start
+end
