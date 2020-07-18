@@ -24,3 +24,8 @@ namespace :db do
     Pry.start
   end
 end
+
+desc 'open console with pry'
+task :console do
+  Pry.start
+end
