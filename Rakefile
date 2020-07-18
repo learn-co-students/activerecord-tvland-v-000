@@ -24,3 +24,13 @@ namespace :db do
     Pry.start
   end
 end
+
+desc "connects to environment"
+task :environment do
+  require_relative 'config/environment.rb'
+end
+
+desc "drops into Pry"
+task :console do
+  Pry.start
+end
