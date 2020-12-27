@@ -13,11 +13,12 @@ class Actor < ActiveRecord::Base
 
 
   def list_roles
-      roles = []
+    binding.pry
+    roles = []
       array_of_characters = self.characters.map {|character| character.name}
       array_of_shows = self.shows.map {|shows| shows.name}
       role = array_of_characters.concat array_of_shows
-      binding.pry
+
       roles << role.join(" - ")
 
       roles
