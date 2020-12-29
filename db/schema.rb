@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 6) do
+ActiveRecord::Schema.define(version: 11) do
 
   create_table "actors", force: :cascade do |t|
     t.string "first_name"
@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 6) do
   end
 
   create_table "characters", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
     t.integer "show_id"
     t.string "catchphrase"
+    t.string "name"
+    t.integer "actor_id"
   end
 
   create_table "networks", force: :cascade do |t|
@@ -29,9 +29,7 @@ ActiveRecord::Schema.define(version: 6) do
     t.integer "channel"
   end
 
-  create_table "shows", force: :cascade do |t|
-    t.string "name"
-    t.integer "network_id"
-  end
+# Could not dump table "shows" because of following StandardError
+#   Unknown type 'strings' for column 'season'
 
 end
