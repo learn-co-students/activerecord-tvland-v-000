@@ -1,5 +1,4 @@
 require "bundler/setup"
-
 require "sinatra/activerecord"
 
 Bundler.require
