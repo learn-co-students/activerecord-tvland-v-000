@@ -3,7 +3,12 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters
 
   def full_name
-    # self.first_name + last_name
     p "#{first_name} #{last_name}"
+  end
+
+  def list_roles
+    self.characters.first.name + " - " + self.shows.first.name
+#    p "#{characters.name} - #{shows.name}"
+#    binding.pry
   end
 end
